@@ -6,13 +6,13 @@ Created on Sat Mar  5 17:55:28 2022
 """
 
 class Character():
-    def __init__(self,name):
+    def __init__(self):
         self.__LEVEL=1
         self.__HP=10
         self.__MP=5
         self.__ATK=3
         self.__DEF=2
-        self.__NAME=name
+        self.__NAME=""
         self.__EXP=0
     
     def show_status(self):
@@ -34,3 +34,14 @@ class Character():
         self.__MP+=3
         self.__ATK+=2
         self.__DEF+=self.__LEVEL%2
+    
+    def change_name(self,name):
+        self.__NAME=name
+        
+class Player(Character):
+    def set_name(self,name):
+        self.change_name(name)
+
+class monster(Character):
+    def set_name(self,name):
+        self.change_name=name

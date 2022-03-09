@@ -5,6 +5,9 @@ Created on Sat Mar  5 17:55:28 2022
 @author: steve
 """
 
+import random
+
+
 class Character():
     def __init__(self):
         self.__LEVEL=1
@@ -44,4 +47,10 @@ class Player(Character):
 
 class monster(Character):
     def set_name(self,name):
-        self.change_name=name
+        self.change_name(name)
+        
+    def set_monster(self,key=None):
+        self.set_name("test")
+        if key:
+            print("still work")
+        

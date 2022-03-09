@@ -21,7 +21,7 @@ def end_name():
     print("因此，他決定賦予你稱號，讓你結束這傳奇的冒險")
     time.sleep(1)
     print("'你獲得了稱號'")
-    print("無法命名者，'無名者'")
+    print("無法命名的雞掰人，'無名者'")
     time.sleep(1)
     print("Thanks for your playing!")
     input()
